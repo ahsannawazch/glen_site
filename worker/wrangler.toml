@@ -1,0 +1,11 @@
+name = "glen-contact-form"
+main = "contact-worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+TO_EMAIL = "info@glenprivatelabel.com"
+FROM_EMAIL = "Glen Website <noreply@glenprivatelabel.com>"
+ALLOWED_ORIGINS = "https://glenprivatelabel.com,https://www.glenprivatelabel.com"
+
+# The API key is a secret, so it is not stored here. Set it with:
+#   npx wrangler secret put RESEND_API_KEY
