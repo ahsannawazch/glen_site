@@ -133,9 +133,10 @@ p{color:var(--brown2);line-height:1.75}
 .hv:hover::after{background:rgba(255,255,255,.14)}
 .hv:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
 .hv-fill{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;padding:12px}
-/* Photo tiles (6 Nov): the chip is always visible at rest so labels stay readable on photos;
-   hover/focus lifts it and reveals the arrow. The whole tile remains the link. */
-.hv-chip{display:inline-flex;align-items:center;padding:.5rem 1rem;border:1px solid rgba(253,227,213,.3);border-radius:50px;background:var(--brown);color:var(--bg2);font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;box-shadow:0 4px 16px rgba(62,37,25,.25);transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
+/* Photo tiles (6 Nov; smaller + lighter chips per client, 16 Nov): the chip is always
+   visible at rest so labels stay readable on photos; hover/focus darkens and lifts it.
+   Lighter look: translucent brown lets the photo show through (with a slight blur). */
+.hv-chip{display:inline-flex;align-items:center;padding:.35rem .75rem;border:1px solid rgba(253,227,213,.4);border-radius:50px;background:rgba(139,94,71,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);color:var(--bg2);font-size:.56rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;box-shadow:0 3px 12px rgba(62,37,25,.18);transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
 .hv-chip>span{display:inline-block;max-width:0;opacity:0;overflow:hidden;margin-left:0;transition:max-width .25s,opacity .25s,margin .25s}
 .hv:hover .hv-chip,.hv:focus-visible .hv-chip{background:#3D2519;transform:translateY(-2px)}
 .hv:hover .hv-chip>span,.hv:focus-visible .hv-chip>span{max-width:1.4em;opacity:1;margin-left:.4rem}
@@ -198,6 +199,10 @@ p{color:var(--brown2);line-height:1.75}
 .card-link{display:inline-flex;align-items:center;gap:.25rem;font-size:.75rem;font-weight:600;color:var(--brown);margin-top:auto;padding-top:.75rem;letter-spacing:.02em}
 .card-link::after{content:'→';transition:.2s}
 .card:hover .card-link::after,.card-link:hover::after{transform:translateX(3px)}
+/* Whole card clickable (client request, 16 Nov): the link's ::before stretches over the card
+   (::after is the arrow). Keyboard users still reach the real link. */
+.card{position:relative}
+.card-link::before{content:'';position:absolute;inset:0;z-index:1}
 @media(max-width:800px){.grid-3{grid-template-columns:1fr}}
 @media(min-width:561px) and (max-width:800px){.grid-3{grid-template-columns:1fr 1fr}}
 
@@ -454,6 +459,9 @@ footer{background:var(--brown);color:var(--bg2)}
 .prod-link:hover{color:var(--brown3)}
 .prod-link::after{content:'→';transition:transform .2s}
 .prod:hover .prod-link::after{transform:translateX(3px)}
+/* Whole product card clickable (client request, 16 Nov) — same stretch technique */
+.prod{position:relative}
+.prod-link::before{content:'';position:absolute;inset:0;z-index:1}
 @media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
 @media(max-width:600px){
   .prod-grid{grid-template-columns:repeat(2,1fr);gap:12px}
