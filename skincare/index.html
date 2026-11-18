@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Private Label Skincare Products | Glen Private Label Service</title>
-<meta name="description" content="Private label skincare manufacturing in Lahore: face wash, serums, moisturisers, sunscreen, cleansers and more — custom formulated or white label, from 500 units.">
+<meta name="description" content="Private label skincare manufacturing in Lahore: serums, face washes, creams, sunscreens, masks, scrubs and toners — custom formulated or white label, from 500 units.">
 <meta name="theme-color" content="#623D2C">
 <link rel="canonical" href="https://glenprivatelabel.com/skincare/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Glen Private Label Service">
 <meta property="og:title" content="Private Label Skincare Products | Glen Private Label Service">
-<meta property="og:description" content="Face wash, serums, moisturisers, sunscreen, cleansers and more — private label skincare from Glen in Lahore.">
+<meta property="og:description" content="Serums, face washes, creams, sunscreens, masks and more — private label skincare from Glen in Lahore.">
 <meta property="og:url" content="https://glenprivatelabel.com/skincare/">
 <meta property="og:image" content="https://glenprivatelabel.com/assets/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -60,139 +60,93 @@
 
 <main id="main">
 
-<!-- ═══ CATEGORY BANNER ═══ -->
-<section class="cat-banner" aria-labelledby="page-h">
+<!-- ═══ 1. BANNER — full-bleed reserved slot; client supplies the artwork (recommended 1920x820, ratio 2.35:1) ═══ -->
+<section class="cat-banner" aria-label="Skincare banner">
+  <nav class="crumbs" aria-label="Breadcrumb" style="padding:1.1rem 24px 0;max-width:1100px;margin-inline:auto"><a href="../">Home</a><span aria-hidden="true"> / </span><a href="../#services">Services</a><span aria-hidden="true"> / </span><span aria-current="page">Skincare</span></nav>
+  <!-- TEMPORARY demo banner (client's sample, 898x380) — to be replaced by the final artwork (recommended 1920x820 px, JPG/WebP, under 300 KB) -->
+  <div class="banner-slot">
+    <img src="../assets/img/banner-skincare-demo.webp" alt="Glen private label skincare banner" width="898" height="380" fetchpriority="high">
+  </div>
+</section>
+
+<!-- ═══ 2. PRODUCT CATEGORIES (icon tiles filter the products below) ═══ -->
+<section class="section s-white" id="categories" aria-labelledby="cat-h">
   <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb" style="padding-top:1.25rem"><a href="../">Home</a><span aria-hidden="true"> / </span><a href="../#services">Services</a><span aria-hidden="true"> / </span><span aria-current="page">Skincare</span></nav>
-    <div class="cb-in">
-      <div class="cb-copy">
-        <span class="label">Our Service</span>
-        <h1 id="page-h" class="cb-h">Private Label<br>Skincare</h1>
-        <p class="cb-p">Moisturisers, serums, toners, cleansers, SPF, anti-aging and brightening — formulated, filled and finished under your own brand. From a single SKU to a full product line.</p>
-        <div class="cb-points">
-          <div class="cb-point"><span class="cb-ico" aria-hidden="true">🧪</span>Custom Formulation</div>
-          <div class="cb-point"><span class="cb-ico" aria-hidden="true">🏷️</span>Your Branding</div>
-          <div class="cb-point"><span class="cb-ico" aria-hidden="true">📦</span>From 500 Units</div>
-        </div>
-        <div class="hero-btns" style="margin-top:.25rem">
-          <a href="../?category=Skincare#contact" class="btn btn-dark">Get a Skincare Quote →</a>
-          <a href="#products" class="btn btn-ghost">Browse Products</a>
-        </div>
-      </div>
-      <div class="cb-img"><img src="../assets/img/prod-banner-skincare.webp" alt="Skincare products banner placeholder" width="600" height="450" fetchpriority="high"></div>
+    <h2 id="cat-h" class="line-head rev">Skincare Product Categories</h2>
+    <!-- DATA NEEDED (client): the seven category icons will be replaced by the client's own icons when supplied. -->
+    <div class="cat-grid rev" role="group" aria-label="Filter skincare products by category">
+      <button type="button" class="cat-tile" data-f="serums" aria-pressed="false"><span class="cat-ico" aria-hidden="true">💧</span>Serums</button>
+      <button type="button" class="cat-tile" data-f="washes" aria-pressed="false"><span class="cat-ico" aria-hidden="true">🧴</span>Face Washes</button>
+      <button type="button" class="cat-tile" data-f="creams" aria-pressed="false"><span class="cat-ico" aria-hidden="true">🫙</span>Creams &amp; Sunscreens</button>
+      <button type="button" class="cat-tile" data-f="masks" aria-pressed="false"><span class="cat-ico" aria-hidden="true">🧖</span>Masks &amp; Scrubs</button>
+      <button type="button" class="cat-tile" data-f="toners" aria-pressed="false"><span class="cat-ico" aria-hidden="true">💦</span>Toners &amp; Fixers</button>
     </div>
   </div>
 </section>
 
-<!-- ═══ PRODUCT GRID ═══ -->
-<section class="section s-white" id="products" aria-labelledby="prod-h">
+<!-- ═══ 3. FINISHED PRODUCTS (data: GLEN_Website_Product_Range.pdf, 17 Nov) ═══ -->
+<section class="section s-peach" id="products" aria-labelledby="prod-h">
   <div class="wrap">
-    <div class="sec-head center rev">
-      <span class="label">Product Range</span>
-      <h2 id="prod-h" class="mt-s">Skincare Products<br>We Manufacture</h2>
-      <p class="mt-m" style="max-width:46ch;margin-inline:auto">A representative range. Tell us your format and we will match it — or develop something new with our in-house lab.</p>
-    </div>
-
-    <div class="chip-bar rev" role="group" aria-label="Filter skincare products">
-      <button type="button" class="chip on" data-f="all" aria-pressed="true">All</button>
-      <button type="button" class="chip" data-f="cleansers" aria-pressed="false">Cleansers</button>
-      <button type="button" class="chip" data-f="serums" aria-pressed="false">Serums</button>
-      <button type="button" class="chip" data-f="moisturisers" aria-pressed="false">Moisturisers</button>
-      <button type="button" class="chip" data-f="sun" aria-pressed="false">Sun Care</button>
-      <button type="button" class="chip" data-f="treatments" aria-pressed="false">Treatments</button>
-    </div>
-
+    <h2 id="prod-h" class="line-head range-head rev">Finished Products</h2>
+    <!-- DATA NEEDED (client): product photos (placeholder tiles until then), pack sizes, key claims. -->
     <div class="prod-grid">
-      <article class="prod rev" data-cat="cleansers">
-        <div class="prod-img"><img src="../assets/img/prod-face-wash.webp" alt="Face wash product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Cleansers</div>
-          <h3>Face Wash</h3>
-          <p>Gel, cream or foaming cleansers for oily, dry and sensitive skin types.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
-      <article class="prod rev" data-cat="serums">
-        <div class="prod-img"><img src="../assets/img/prod-vitamin-c-serum.webp" alt="Vitamin C serum product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Serums</div>
-          <h3>Vitamin C Serum</h3>
-          <p>Brightening antioxidant serums in a range of concentrations and bases.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
-      <article class="prod rev" data-cat="serums">
-        <div class="prod-img"><img src="../assets/img/prod-hyaluronic-serum.webp" alt="Hyaluronic acid serum product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Serums</div>
-          <h3>Hyaluronic Acid Serum</h3>
-          <p>Hydrating and plumping serums with multi-weight hyaluronic acid.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
-      <article class="prod rev" data-cat="moisturisers">
-        <div class="prod-img"><img src="../assets/img/prod-beauty-cream.webp" alt="Beauty cream product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Moisturisers</div>
-          <h3>Beauty Cream</h3>
-          <p>Day and night creams, rich butters and lightweight gels.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
-      <article class="prod rev" data-cat="sun">
-        <div class="prod-img"><img src="../assets/img/prod-sunscreen.webp" alt="Sunscreen SPF 50 product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Sun Care</div>
-          <h3>Sunscreen SPF 50</h3>
-          <p>Mineral and hybrid SPF formulations, tinted or invisible finishes.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
-      <article class="prod rev" data-cat="treatments">
-        <div class="prod-img"><img src="../assets/img/prod-brightening-cream.webp" alt="Brightening cream product placeholder" width="600" height="600" loading="lazy" decoding="async"></div>
-        <div class="prod-body">
-          <div class="prod-spec">Treatments</div>
-          <h3>Brightening Cream</h3>
-          <p>Targeted treatments for tone, texture and dark-spot concerns.</p>
-          <a class="prod-link" href="../?category=Skincare#contact">Enquire</a>
-        </div>
-      </article>
+      <!-- Serums (11) -->
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>All-in-One Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Glutathione Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Hyaluronic Acid Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Anti-Acne Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Vitamin C Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Niacinamide Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Whitening Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Retinol Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Rice Extract Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Collagen Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="serums"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Serum</span></div></div><div class="prod-body"><div class="prod-spec">Serums</div><h3>Under Eye Serum</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <!-- Face Washes (11) -->
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Creamy Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Gel Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Anti-Acne Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Vitamin Beads Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Oil-Free Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Glutathione Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Hyaluronic Acid Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Vitamin C Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Niacinamide Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Brightening Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="washes"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Face Wash</span></div></div><div class="prod-body"><div class="prod-spec">Face Washes</div><h3>Hydrating Face Wash</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <!-- Face Creams, Gels & Sunscreens (11) -->
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Cream</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Fairness Cream</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Cream</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Face Moisturizer</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">☀️</span><span>Sunscreen</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Sunblock SPF 60 (Gel &amp; Cream)</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Cream</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Anti-Aging Retinol Cream</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Cream</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Cold Cream</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Cream</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Under Eye Cream</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🌿</span><span>Gel</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Aloe Vera Gel</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🌿</span><span>Gel</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Face Anti-Aging Gel</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">☀️</span><span>Sunscreen</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Tinted Sunscreen</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💋</span><span>Lip Balm</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Tinted Lip Balm</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="creams"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💄</span><span>Makeup Tint</span></div></div><div class="prod-body"><div class="prod-spec">Creams &amp; Sunscreens</div><h3>Makeup Tints</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <!-- Face Masks, Scrubs & Facial Treatments (6) -->
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧖</span><span>Face Mask</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Collagen Face Mask</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧖</span><span>Face Mask</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Face Masks (Mud, Rice &amp; Clay)</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">✨</span><span>Face Scrub</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Face Scrub</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">✨</span><span>Skin Polish</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Skin Polish (Face)</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧖</span><span>Facial</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Urgent Facial</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="masks"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧖</span><span>Facial Items</span></div></div><div class="prod-body"><div class="prod-spec">Masks &amp; Scrubs</div><h3>Facial Items</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <!-- Other Facial Products (2) -->
+      <article class="prod rev" data-cat="toners"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💦</span><span>Toner</span></div></div><div class="prod-body"><div class="prod-spec">Toners &amp; Fixers</div><h3>Skin Toners</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="toners"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💦</span><span>Fixer</span></div></div><div class="prod-body"><div class="prod-spec">Toners &amp; Fixers</div><h3>Makeup Fixer</h3><a class="prod-link" href="../?category=Skincare#contact">Enquire</a></div></article>
     </div>
   </div>
 </section>
 
-<!-- ═══ WHY GLEN ═══ -->
-<section class="section s-peach" aria-labelledby="sk-why-h">
+<!-- ═══ 4. EXPLORE OTHER SERVICES ═══ -->
+<section class="section s-white explore-sec" aria-label="Explore more services">
   <div class="wrap">
-    <div class="sec-head rev">
-      <span class="label">Why Glen</span>
-      <h2 id="sk-why-h" style="margin-top:.5rem">Built for<br>Your Brand</h2>
-    </div>
-    <div class="feat-grid">
-      <div class="feat rev"><div class="exp-icon" aria-hidden="true">🧪</div><div><h3>In-house R&amp;D lab</h3><p>Custom formulation developed around your brief, market and regulatory requirements.</p></div></div>
-      <div class="feat rev"><div class="exp-icon" aria-hidden="true">📦</div><div><h3>White-label options</h3><p>Choose from our existing formula library when you want to move faster.</p></div></div>
-      <div class="feat rev"><div class="exp-icon" aria-hidden="true">📋</div><div><h3>Regulatory support</h3><p>DRAP registration, PCSIR testing and export documentation handled for you.</p></div></div>
-      <div class="feat rev"><div class="exp-icon" aria-hidden="true">📸</div><div><h3>Photography &amp; launch</h3><p>In-house product photography and Shopify setup, ready to sell from day one.</p></div></div>
-    </div>
-    <div class="facts rev">
-      <div class="fact"><b>From 500 units</b><span>MOQ per SKU for most products; varies by formulation and packaging.</span></div>
-      <div class="fact"><b>4–8 weeks</b><span>Standard production from formula approval to finished goods.</span></div>
-      <div class="fact"><b>10–14 weeks</b><span>Custom formulations requiring R&amp;D. Rush timelines on request.</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FINAL CTA ═══ -->
-<section class="section s-brown" aria-labelledby="cta-h">
-  <div class="wrap">
-    <div class="cta-in rev">
-      <span class="label">Get Started Today</span>
-      <h2 id="cta-h">Launch Your<br>Skincare Brand</h2>
-      <p>Book a free consultation and get a custom quote in 24 hours.</p>
-      <div class="cta-btns">
-        <a href="../?category=Skincare#contact" class="btn btn-light">Get a Free Quote →</a>
-        <a href="https://wa.me/923001234567" class="btn btn-light-ghost" target="_blank" rel="noopener">WhatsApp Us</a>
-      </div>
+    <div class="exp-stack rev">
+      <a class="exp-btn exp-btn-dark" href="../photography/"><span class="exp-ico" aria-hidden="true">📷</span>Explore Photography</a>
+      <a class="exp-btn exp-btn-line" href="../packaging/"><span class="exp-ico" aria-hidden="true">📦</span>Explore Packaging &amp; Labeling</a>
+      <a class="exp-btn exp-btn-line" href="../shopify/"><span class="exp-ico" aria-hidden="true">🛒</span>Explore Shopify Store</a>
     </div>
   </div>
 </section>
@@ -209,13 +163,12 @@
       </div>
       <nav class="foot-col" aria-label="Services">
         <h2>Services</h2>
-        <a href="skincare/">Skincare Manufacturing</a>
-        <a href="../skincare-line/">Skincare Line</a>
-        <a href="../#svc-haircare">Haircare Manufacturing</a>
-        <a href="../#svc-bodycare">Body Care Manufacturing</a>
+        <a href="../skincare/">Skincare Manufacturing</a>
+        <a href="../haircare/">Haircare Manufacturing</a>
+        <a href="../body-care/">Body Care Manufacturing</a>
         <a href="../packaging/">Custom Packaging</a>
-        <a href="../#svc-photography">Product Photography</a>
-        <a href="../#svc-shopify">Shopify Development</a>
+        <a href="../photography/">Product Photography</a>
+        <a href="../shopify/">Shopify Development</a>
       </nav>
       <nav class="foot-col" aria-label="Company">
         <h2>Company</h2>

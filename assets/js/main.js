@@ -83,13 +83,15 @@
   }));
 
   /* ── CATEGORY PAGE PRODUCT FILTER ────────────────────────
-     Same behaviour as the portfolio filter, for the .chip buttons on the
-     category pages (skincare, haircare, …). */
-  const chips = $$('.chip');
+     Works for both .chip bars and .cat-tile icon grids on the category pages.
+     Tiles toggle: tapping the active category again shows everything. */
+  const chips = $$('.chip, .cat-tile');
   chips.forEach(btn => btn.addEventListener('click', () => {
+    const wasOn = btn.classList.contains('on');
+    const f = (wasOn && btn.dataset.f !== 'all') ? 'all' : btn.dataset.f;
     chips.forEach(b => { b.classList.remove('on'); b.setAttribute('aria-pressed', 'false'); });
-    btn.classList.add('on'); btn.setAttribute('aria-pressed', 'true');
-    const f = btn.dataset.f;
+    const active = chips.find(b => b.dataset.f === f);
+    if (active) { active.classList.add('on'); active.setAttribute('aria-pressed', 'true'); }
     $$('.prod').forEach(item => {
       item.hidden = !(f === 'all' || (item.dataset.cat || '').split(' ').includes(f));
     });
