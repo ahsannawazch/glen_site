@@ -60,12 +60,18 @@
 
 <main id="main">
 
-<!-- ═══ 1. BANNER — full-bleed reserved slot; client supplies the artwork (recommended 1920x820, ratio 2.35:1) ═══ -->
-<section class="cat-banner" aria-label="Skincare banner">
+<!-- ═══ 1. BANNER — full-bleed desktop artwork; separate product crop + live heading on phones ═══ -->
+<section class="cat-banner" aria-labelledby="banner-h">
   <nav class="crumbs" aria-label="Breadcrumb" style="padding:1.1rem 24px 0;max-width:1100px;margin-inline:auto"><a href="../">Home</a><span aria-hidden="true"> / </span><a href="../#services">Services</a><span aria-hidden="true"> / </span><span aria-current="page">Skincare</span></nav>
-  <!-- TEMPORARY demo banner (client's sample, 898x380) — to be replaced by the final artwork (recommended 1920x820 px, JPG/WebP, under 300 KB) -->
+  <!-- TEMPORARY demo artwork (client sample) — replace both images when final banners arrive -->
+  <div class="banner-copy">
+    <h1 id="banner-h"><span class="bh-eyebrow">Our Expertise</span><span class="bh-title">Skincare</span><span class="bh-sub">Private Label Manufacturing for Premium Skincare Brands</span></h1>
+  </div>
   <div class="banner-slot">
-    <img src="../assets/img/banner-skincare-demo.webp" alt="Glen private label skincare banner" width="898" height="380" fetchpriority="high">
+    <picture>
+      <source media="(max-width:600px)" srcset="../assets/img/banner-skincare-mobile-demo.webp">
+      <img src="../assets/img/banner-skincare-demo.webp" alt="Glen private label skincare range: gentle face wash, vitamin C serum and hydrating cream" width="898" height="380" fetchpriority="high">
+    </picture>
   </div>
 </section>
 
