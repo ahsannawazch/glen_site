@@ -61,12 +61,16 @@
 <main id="main">
 
 <!-- ═══ 1. BANNER — full-bleed reserved slot; client supplies the artwork (recommended 1920x820, ratio 2.35:1) ═══ -->
-<section class="cat-banner" aria-label="Haircare banner">
+<section class="cat-banner" aria-labelledby="banner-h" aria-label="Haircare banner">
   <nav class="crumbs" aria-label="Breadcrumb" style="padding:1.1rem 24px 0;max-width:1100px;margin-inline:auto"><a href="../">Home</a><span aria-hidden="true"> / </span><a href="../#services">Services</a><span aria-hidden="true"> / </span><span aria-current="page">Haircare</span></nav>
-  <!-- BANNER IMAGE PLACEHOLDER — client to supply (1920x820 px, JPG/WebP, under 300 KB) -->
-  <div class="banner-slot" role="img" aria-label="Haircare banner placeholder">
-    <span aria-hidden="true">🖼️</span>
-    <span>Banner Image</span>
+    <div class="banner-copy">
+    <h1 id="banner-h"><span class="bh-eyebrow">Our Expertise</span><span class="bh-title">Haircare</span><span class="bh-sub">Private label hair care manufacturing</span></h1>
+  </div>
+  <div class="banner-slot">
+    <picture>
+      <source media="(max-width:600px)" srcset="../assets/img/banner-haircare-mobile.webp">
+      <img src="../assets/img/banner-haircare.webp" alt="Glen private label haircare range" width="1925" height="817" fetchpriority="high">
+    </picture>
   </div>
 </section>
 
@@ -91,20 +95,21 @@
     <!-- DATA NEEDED (client): product photos (placeholder tiles until then), pack sizes, key claims. -->
     <div class="prod-grid">
       <!-- Shampoo & Conditioning (3) -->
-      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Shampoo</span></div></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Shampoo</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Conditioner</span></div></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Conditioner</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Hair Mask</span></div></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Mask</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><img src="../assets/img/p-hc-01.webp" alt="Hair Shampoo packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Shampoo</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><img src="../assets/img/p-hc-02.webp" alt="Hair Conditioner packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Conditioner</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="shampoo"><div class="prod-img"><img src="../assets/img/p-hc-03.webp" alt="Hair Mask packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Shampoo &amp; Conditioning</div><h3>Hair Mask</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
       <!-- Hair Oils & Serums (3) -->
-      <article class="prod rev" data-cat="oils"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Hair Oil</span></div></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Oils</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="oils"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Hair Serum</span></div></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Serums</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="oils"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Growth Serum</span></div></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Growth Serum</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="oils"><div class="prod-img"><img src="../assets/img/p-hc-04.webp" alt="Hair Oils packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Oils</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="oils"><div class="prod-img"><img src="../assets/img/p-hc-05.webp" alt="Hair Serums packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Serums</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="oils"><div class="prod-img"><img src="../assets/img/p-hc-06.webp" alt="Hair Growth Serum packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Oils &amp; Serums</div><h3>Hair Growth Serum</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
       <!-- Hair Styling Products (3) -->
-      <article class="prod rev" data-cat="styling"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🪮</span><span>Styling Gel</span></div></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Gel</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="styling"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🪮</span><span>Styling Cream</span></div></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Cream</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="styling"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🪮</span><span>Styling Powder</span></div></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Powder</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="styling"><div class="prod-img"><img src="../assets/img/p-hc-07.webp" alt="Hair Styling Gel packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Gel</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="styling"><div class="prod-img"><img src="../assets/img/p-hc-08.webp" alt="Hair Styling Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Cream</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="styling"><div class="prod-img"><img src="../assets/img/p-hc-09.webp" alt="Hair Styling Powder packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Styling</div><h3>Hair Styling Powder</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
       <!-- Hair Removal & Retarding (2) -->
-      <article class="prod rev" data-cat="removal"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🕯️</span><span>Removal Wax</span></div></div><div class="prod-body"><div class="prod-spec">Hair Removal &amp; Retarding</div><h3>Hair Removal Waxes</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="removal"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Retarder Cream</span></div></div><div class="prod-body"><div class="prod-spec">Hair Removal &amp; Retarding</div><h3>Hair Retarder Cream</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="removal"><div class="prod-img"><img src="../assets/img/p-hc-10.webp" alt="Hair Removal Waxes packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Removal &amp; Retarding</div><h3>Hair Removal Waxes</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="removal"><div class="prod-img"><img src="../assets/img/p-hc-12.webp" alt="Velvet Mist hair removal spray packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Removal &amp; Retarding</div><h3>Hair Removal Spray</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="removal"><div class="prod-img"><img src="../assets/img/p-hc-11.webp" alt="Hair Retarder Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hair Removal &amp; Retarding</div><h3>Hair Retarder Cream</h3><a class="prod-link" href="../?category=Haircare#contact">Enquire</a></div></article>
     </div>
   </div>
 </section>

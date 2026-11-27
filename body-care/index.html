@@ -61,12 +61,16 @@
 <main id="main">
 
 <!-- ═══ 1. BANNER — full-bleed reserved slot; client supplies the artwork (recommended 1920x820, ratio 2.35:1) ═══ -->
-<section class="cat-banner" aria-label="Body care banner">
+<section class="cat-banner" aria-labelledby="banner-h" aria-label="Body care banner">
   <nav class="crumbs" aria-label="Breadcrumb" style="padding:1.1rem 24px 0;max-width:1100px;margin-inline:auto"><a href="../">Home</a><span aria-hidden="true"> / </span><a href="../#services">Services</a><span aria-hidden="true"> / </span><span aria-current="page">Body Care</span></nav>
-  <!-- BANNER IMAGE PLACEHOLDER — client to supply (1920x820 px, JPG/WebP, under 300 KB) -->
-  <div class="banner-slot" role="img" aria-label="Body care banner placeholder">
-    <span aria-hidden="true">🖼️</span>
-    <span>Banner Image</span>
+    <div class="banner-copy">
+    <h1 id="banner-h"><span class="bh-eyebrow">Our Expertise</span><span class="bh-title">Body Care</span><span class="bh-sub">Private label body care manufacturing</span></h1>
+  </div>
+  <div class="banner-slot">
+    <picture>
+      <source media="(max-width:600px)" srcset="../assets/img/banner-body-care-mobile.webp">
+      <img src="../assets/img/banner-body-care.webp" alt="Glen private label body care range" width="1928" height="816" fetchpriority="high">
+    </picture>
   </div>
 </section>
 
@@ -93,22 +97,22 @@
     <!-- DATA NEEDED (client): product photos (placeholder tiles until then), pack sizes, key claims. -->
     <div class="prod-grid">
       <!-- Body Cleansers (2) -->
-      <article class="prod rev" data-cat="cleansers"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🚿</span><span>Body Wash</span></div></div><div class="prod-body"><div class="prod-spec">Body Cleansers</div><h3>Body Washes</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="cleansers"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧼</span><span>Hand Wash</span></div></div><div class="prod-body"><div class="prod-spec">Body Cleansers</div><h3>Hand Washes</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="cleansers"><div class="prod-img"><img src="../assets/img/p-bc-01.webp" alt="Body Washes packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Body Cleansers</div><h3>Body Washes</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="cleansers"><div class="prod-img"><img src="../assets/img/p-bc-02.webp" alt="Hand Washes packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Body Cleansers</div><h3>Hand Washes</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
       <!-- Body Scrubs & Exfoliation (1) -->
-      <article class="prod rev" data-cat="scrubs"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">✨</span><span>Body Scrub</span></div></div><div class="prod-body"><div class="prod-spec">Scrubs &amp; Exfoliation</div><h3>Body Scrub</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="scrubs"><div class="prod-img"><img src="../assets/img/p-bc-03.webp" alt="Body Scrub packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Scrubs &amp; Exfoliation</div><h3>Body Scrub</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
       <!-- Body Moisturizers & Butters (2) -->
-      <article class="prod rev" data-cat="moisturizers"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🧴</span><span>Moisturizer</span></div></div><div class="prod-body"><div class="prod-spec">Moisturizers &amp; Butters</div><h3>Body Moisturizers</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="moisturizers"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Body Butter</span></div></div><div class="prod-body"><div class="prod-spec">Moisturizers &amp; Butters</div><h3>Body Butter</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="moisturizers"><div class="prod-img"><img src="../assets/img/p-bc-04.webp" alt="Body Moisturizers packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Moisturizers &amp; Butters</div><h3>Body Moisturizers</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="moisturizers"><div class="prod-img"><img src="../assets/img/p-bc-05.webp" alt="Body Butter packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Moisturizers &amp; Butters</div><h3>Body Butter</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
       <!-- Hand & Foot Care (3) -->
-      <article class="prod rev" data-cat="feet"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🤲</span><span>Hand Cream</span></div></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Hand Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="feet"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🦶</span><span>Feet Cream</span></div></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Feet Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="feet"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🦶</span><span>Crack Heel Cream</span></div></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Feet Crack Heel Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="feet"><div class="prod-img"><img src="../assets/img/p-bc-06.webp" alt="Hand Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Hand Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="feet"><div class="prod-img"><img src="../assets/img/p-bc-07.webp" alt="Feet Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Feet Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="feet"><div class="prod-img"><img src="../assets/img/p-bc-08.webp" alt="Cracked Heel Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Hand &amp; Foot Care</div><h3>Feet Crack Heel Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
       <!-- Underarm Care (2) -->
-      <article class="prod rev" data-cat="underarm"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">💧</span><span>Underarm Serum</span></div></div><div class="prod-body"><div class="prod-spec">Underarm Care</div><h3>Underarm Whitening Serum</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
-      <article class="prod rev" data-cat="underarm"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🫙</span><span>Underarm Cream</span></div></div><div class="prod-body"><div class="prod-spec">Underarm Care</div><h3>Underarm Whitening Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="underarm"><div class="prod-img"><img src="../assets/img/p-bc-09.webp" alt="Underarm Whitening Serum packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Underarm Care</div><h3>Underarm Whitening Serum</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="underarm"><div class="prod-img"><img src="../assets/img/p-bc-10.webp" alt="Underarm Whitening Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Underarm Care</div><h3>Underarm Whitening Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
       <!-- Intimate Care (1) -->
-      <article class="prod rev" data-cat="intimate"><div class="prod-img"><div class="prod-ph"><span aria-hidden="true">🌿</span><span>Intimate Care</span></div></div><div class="prod-body"><div class="prod-spec">Intimate Care</div><h3>Private Part Brightening Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
+      <article class="prod rev" data-cat="intimate"><div class="prod-img"><img src="../assets/img/p-bc-11.webp" alt="Brightening Cream packshot" width="800" height="800" loading="lazy" decoding="async"></div><div class="prod-body"><div class="prod-spec">Intimate Care</div><h3>Private Part Brightening Cream</h3><a class="prod-link" href="../?category=Body+Care#contact">Enquire</a></div></article>
     </div>
   </div>
 </section>

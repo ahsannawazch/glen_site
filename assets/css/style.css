@@ -476,9 +476,11 @@ footer{background:var(--brown);color:var(--bg2)}
 /* ─── CATEGORY PAGE v2 (mockup-matched, 17 Nov) ──────────────────────
    Banner slot (reserved for the client's image) + icon category tiles that
    filter the product grid + stacked explore buttons. */
-.banner-slot{width:100%;aspect-ratio:898/383;background:linear-gradient(160deg,#FEF0E8,#FDE3D5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;color:var(--brown3)}
+.banner-slot{width:100%;background:linear-gradient(160deg,#FEF0E8,#FDE3D5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;color:var(--brown3)}
 .banner-slot span:first-child{font-size:1.6rem}
 .banner-slot span:last-child{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+/* real banners render at their own ratio — no crop (17 Nov) */
+.banner-slot img{width:100%;height:auto;display:block}
 .banner-slot picture{display:block;width:100%;height:100%}
 /* live page heading: screen-reader only on desktop (the artwork carries the visual title),
    shown above a dedicated product crop on phones so the banner copy stays readable */
